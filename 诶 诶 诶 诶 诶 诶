@@ -1,0 +1,49 @@
+game.Players.LocalPlayer.CharacterAdded:connect(function(char)
+game.StarterGui:SetCore("SendNotification", {
+Title = ""; 
+Text = "Respawned";
+Icon = "rbxassetid://0"; 
+Duration = 5; 
+})
+wait(0.1)
+game.Players.LocalPlayer.PlayerGui.LocalScript.Hit1.AnimationId = "https://www.roblox.com/item.aspx?id=0"
+game.Players.LocalPlayer.PlayerGui.LocalScript.Hit2.AnimationId = "https://www.roblox.com/item.aspx?id=0"
+game.Players.LocalPlayer.PlayerGui.LocalScript.Hit3.AnimationId = "https://www.roblox.com/item.aspx?id=0"
+wait()
+game.Players.LocalPlayer.Backpack.ServerTraits.BulletDeflect:Destroy()
+wait()
+char.ChildAdded:connect(function(ch)
+print(ch.Name)
+end)
+end) -- no ani1m
+wait()
+game.Players.LocalPlayer.PlayerGui.HUD.Cash.Text = "KDA ON TOP" -- text changer
+wait() -- rai1nbow le1tters
+local top = 100
+while true do
+wait()
+for i = 1,top,1 do
+game.Players.LocalPlayer.PlayerGui.HUD.Cash.TextColor3 = Color3.new(i/top,0/top,0/top)
+wait()
+end
+for i = 1,top,1 do
+game.Players.LocalPlayer.PlayerGui.HUD.Cash.TextColor3 = Color3.new(top/top,i/top,0/top)
+wait()
+end
+for i = 1,top,1 do
+game.Players.LocalPlayer.PlayerGui.HUD.Cash.TextColor3 = Color3.new(top/top,top/top,i/top)
+wait()
+end
+for i = top,1,-1 do
+game.Players.LocalPlayer.PlayerGui.HUD.Cash.TextColor3 = Color3.new(i/top,top/top,top/top)
+wait()
+end
+for i = top,1,-1 do
+game.Players.LocalPlayer.PlayerGui.HUD.Cash.TextColor3 = Color3.new(0/top,i/top,top/top)
+wait()
+end
+for i = top,1,-1 do
+game.Players.LocalPlayer.PlayerGui.HUD.Cash.TextColor3 = Color3.new(0/top,0/top,i/top)
+wait()
+end
+end
